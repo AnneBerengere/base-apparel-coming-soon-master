@@ -1,0 +1,237 @@
+/*tout format*/
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefefef;
+}
+
+.container {
+    box-shadow: 0 0.4em 1em -0.5em hsl(0, 6%, 24%);
+}
+
+.alignement_desktop {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo>img {
+    height: 100%;
+    width: auto;
+}
+
+.title {
+    font-size: 2.5em;
+    letter-spacing: 0.3em;
+    line-height: 1.1em;
+    text-transform: uppercase;
+}
+
+.were {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.coming_soon {
+    font-weight: 600;
+}
+
+.text {
+    color: hsl(0, 36%, 70%);
+    font-weight: 600;
+    line-height: 1.8em;
+    margin-bottom: 25px;
+}
+
+.container_email {
+    border: 1px solid;
+    border-color: hsl(0, 36%, 80%);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.text_email {
+    color: hsl(0, 36%, 80%);
+    margin-left: 20px;
+}
+
+.warning {
+    height: 18px;
+    width: 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.warning>img{
+    height: 100%;
+    width: auto;
+}
+
+.button_email {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 30px;
+    margin-right: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.6em 1.5em -0.5em hsl(0, 36%, 70%);
+}
+
+.button_email:hover {
+    background-image: linear-gradient(135deg, #fcdbdc, #f7c8c9);
+
+}
+
+.text_valid_email {
+    color: hsl(0, 74%, 74%);
+    font-size: 0.6em;
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+}
+
+/*ordinateur*/
+@media only screen and (min-width: 941px) {
+
+    .container {
+        background-image: url("images/bg-pattern-desktop.svg"),
+                          linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-width: 800px;
+        min-height: 517px;
+        max-width: 800px;
+        max-height: 517px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 107px;
+    }
+
+    .logo {
+        height: 1.4em;
+        margin-top: 42px;
+    }
+
+    .photo_mobile {
+        display: none;
+    }
+
+    .content_text {
+        width: 285px;
+        min-height: 535px;
+        padding-right: 143px;
+    }
+
+    .title {
+        margin-top: 85px;
+        margin-bottom: 13px;
+    }
+
+    .text {
+        font-size: 0.65em;
+    }
+
+    .container_email {
+        width: 285px;
+        height: 35px;
+    }
+
+    .text_email {
+        font-size: 0.6em;
+    }
+
+    .button_email {
+        height: 39px;
+        width: 65px;
+    }
+
+    .button_email>img{
+        width: 9px;
+        height: 13px;
+    }
+
+    .photo_desktop>img{
+        height: 517px;
+        width: auto;
+
+    }
+
+}
+
+/*mobile*/
+@media only screen and (max-width: 940px) {
+
+    .container {
+        background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        min-width: 375px;
+        max-width: 375px;
+        min-height: 800px;
+        max-height: 800px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alignement_desktop {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        height: 1.3em;
+        margin: 30px;
+    }
+
+    .photo_mobile {
+        margin-bottom: 60px;
+    }
+
+    .content_text {
+        width: 315px;
+        height: 310px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 31px;
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .text {
+        font-size: 0.86em;
+        text-align: center;
+    }
+
+    .container_email {
+        width: 315px;
+        min-height: 45px;
+    }
+
+    .text_email {
+        font-size: 0.8em;
+    }
+
+    .button_email {
+        height: 47px;
+        width: 65px;
+    }
+
+    .button_email>img{
+        height: 20px;
+        width: auto;
+    }
+
+    .photo_desktop {
+        display: none;
+    }
+
+}

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet" href="style.css">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
@@ -16,13 +18,45 @@
 </head>
 <body>
 
-  We're coming soon
+<div class="container">
+<section class="alignement_desktop">
+  <section class="logo">
+    <img src="images/logo.svg"/>
+  </section>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+  <section class="photo_mobile">
+      <img src="images/hero-mobile.jpg"/>
+  </section>
 
-  Email Address
-  
+  <section class="content_text">
+      <div class="title">
+          <span class="were">We're</span>
+          <span class="coming_soon">coming soon</span>
+      </div>
+      <div class="text">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+      </div>
+      <div class="container_email">
+          <span class="text_email"> Email Address</span>
+          <div class="warning" id="warning">
+              <img src="images/icon-error.svg"/>
+          </div>
+          <div class="button_email">
+              <img src="images/icon-arrow.svg"/>
+          </div>
+          <div class="text_valid_email" id="text_valid_email">
+              <span>Please provide a valid email</span>
+          </div>
+      </div>
+  </section>
+</section>
+
+  <section class="photo_desktop">
+     <img src="images/hero-desktop.jpg"/>
+  </section>
+ </div>
+
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
