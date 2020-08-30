@@ -1,5 +1,6 @@
 /*tout format*/
 body {
+    min-height: 100vh;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     display: flex;
@@ -9,6 +10,9 @@ body {
     background-color: #efefefef;
 }
 
+.hidden {
+    display: none !important;
+}
 .container {
     box-shadow: 0 0.4em 1em -0.5em hsl(0, 6%, 24%);
 }
@@ -59,12 +63,25 @@ body {
 
 .text_email {
     color: hsl(0, 36%, 80%);
-    margin-left: 20px;
+    height: 38px;
+    width: 140px;
+    margin-left: 19px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+ .text_email::placeholder {
+     color:hsl(0, 36%, 80%);
+ }
+
+.text_email:focus {
+    outline: none;
+    border-color: transparent;
 }
 
 .warning {
     height: 18px;
-    width: 120px;
+    width: 40px;
     display: flex;
     justify-content: flex-end;
 }
